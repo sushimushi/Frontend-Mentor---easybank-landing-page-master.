@@ -13,6 +13,11 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
+  color: $grayishBlue;
+}
+
+ul {
+  list-style: none;
 }
 
 body {
@@ -55,7 +60,8 @@ body {
     color: $veryLightGray;
   }
   &:hover {
-    opacity: 0.8;
+    opacity: 0.75;
+    color: #fff;
   }
 }
 

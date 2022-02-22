@@ -58,6 +58,7 @@
   &.open {
     span:nth-child(1) {
       transform: rotate(45deg) translate(5px, 6px);
+      background-color: $darkBlue;
     }
 
     span:nth-child(2) {
@@ -67,15 +68,32 @@
 
     span:nth-child(3) {
       transform: rotate(-45deg) translate(4px, -5px);
+      background-color: $darkBlue;
     }
 
-    .header__links {
-      display: block;
-    }
     .overlay {
       animation: fade-in 0.2s ease-in-out forwards;
       display: block;
       background-image: linear-gradient($darkBlue, transparent);
+    }
+  }
+  ul {
+    margin: 1rem auto;
+    background-color: #fff;
+    width: 80%;
+    max-width: 20.5rem;
+    text-align: center;
+    padding: 2rem 0;
+    border-radius: 0.3rem;
+
+    a {
+      color: $darkBlue;
+    }
+    li:not(:last-child) {
+      margin-bottom: 0.8125rem;
+    }
+    li:hover {
+      transform: scale(1.05);
     }
   }
 }

@@ -79,6 +79,11 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
+  color: #9698a6;
+}
+
+ul {
+  list-style: none;
 }
 
 body {
@@ -133,7 +138,8 @@ body {
 }
 
 .button:hover {
-  opacity: 0.8;
+  opacity: 0.75;
+  color: #fff;
 }
 
 @media screen and (max-width: 1023px) {
@@ -207,6 +213,7 @@ body {
 .header.open span:nth-child(1) {
   -webkit-transform: rotate(45deg) translate(5px, 6px);
           transform: rotate(45deg) translate(5px, 6px);
+  background-color: #2d314d;
 }
 
 .header.open span:nth-child(2) {
@@ -218,10 +225,7 @@ body {
 .header.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg) translate(4px, -5px);
           transform: rotate(-45deg) translate(4px, -5px);
-}
-
-.header.open .header__links {
-  display: block;
+  background-color: #2d314d;
 }
 
 .header.open .overlay {
@@ -230,5 +234,28 @@ body {
   display: block;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
   background-image: linear-gradient(#2d314d, transparent);
+}
+
+.header ul {
+  margin: 1rem auto;
+  background-color: #fff;
+  width: 80%;
+  max-width: 20.5rem;
+  text-align: center;
+  padding: 2rem 0;
+  border-radius: 0.3rem;
+}
+
+.header ul a {
+  color: #2d314d;
+}
+
+.header ul li:not(:last-child) {
+  margin-bottom: 0.8125rem;
+}
+
+.header ul li:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 /*# sourceMappingURL=style.css.map */
