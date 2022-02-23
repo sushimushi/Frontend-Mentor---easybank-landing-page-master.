@@ -91,6 +91,10 @@ h3 {
   margin-top: 0;
 }
 
+h1 {
+  font-size: 3.25rem;
+}
+
 p {
   font-size: 1.125rem;
   color: #9698a6;
@@ -209,6 +213,11 @@ a.button {
 
 .container--pl {
   padding-left: 1.5rem;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
 }
 
 .header nav {
@@ -429,6 +438,65 @@ a.button {
   }
   .hero__text h1 {
     font-size: 3.25rem;
+  }
+}
+
+.features {
+  text-align: center;
+  background-color: #f3f4f6;
+}
+
+.features h2 {
+  line-height: 1.2;
+  margin-bottom: 1.375rem;
+}
+
+.features p {
+  font-size: 0.875rem;
+}
+
+.features img {
+  width: 3.75rem;
+  height: 3.75rem;
+  margin-bottom: 1.625rem;
+}
+
+.features .feature__heading {
+  margin-bottom: 3.5rem;
+}
+
+.features .feature__block {
+  margin-bottom: 2.125rem;
+}
+
+@media screen and (min-width: 764px) {
+  .features {
+    text-align: left;
+  }
+  .features .feature__content {
+    display: -ms-grid;
+    display: grid;
+    gap: 1.875rem;
+    text-align: left;
+    -ms-grid-columns: (minmax(100px, 1fr))[4];
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
+  }
+  .features .feature__content h3 {
+    font-size: 1.5rem;
+  }
+  .features .feature__content img {
+    width: 4.625rem;
+    height: 4.625rem;
+    margin-bottom: 2.75rem;
+  }
+  .features .feature__heading {
+    max-width: 60%;
+  }
+  .features h2 {
+    font-size: 2.25rem;
+  }
+  .features p {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
