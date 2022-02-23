@@ -13,6 +13,10 @@
     height: 3.75rem;
     margin-bottom: 1.625rem;
   }
+  .container--p {
+    padding-top: 3.8rem;
+    padding-bottom: 3.8rem;
+  }
 
   .feature__heading {
     margin-bottom: 3.5rem;
@@ -21,6 +25,12 @@
     margin-bottom: 2.125rem;
   }
   @media screen and (min-width: 764px) {
+    .feature {
+      .padding--p {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+      }
+    }
     .feature__content {
       display: grid;
       gap: 1.875rem;

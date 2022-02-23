@@ -1,0 +1,59 @@
+.latest {
+  background-color: $veryLightGray;
+  .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .latest__heading {
+    margin-bottom: 2.25rem;
+  }
+  .latest__blocks {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: $white;
+    margin-bottom: 1.25rem;
+    img {
+      width: 100%;
+      margin-bottom: 1.75rem;
+    }
+    .latest__author {
+      font-size: 0.5625rem;
+    }
+    h3 {
+      font-size: 0.875rem;
+      &:hover {
+        cursor: pointer;
+        color: $limeGreen;
+      }
+    }
+
+    .desc {
+      font-size: 0.75rem;
+    }
+    .latest__text {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  @media screen and (min-width: 764px) {
+    .container {
+      padding-top: 6rem;
+    }
+    .box {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(10rem, 1fr));
+      gap: 1.75rem;
+    }
+    .latest__heading {
+      font-size: 2rem;
+      margin-bottom: 3.5rem;
+    }
+    img {
+      height: 12.5rem;
+      object-fit: cover;
+    }
+    .latest__text {
+      margin-bottom: 1.625rem;
+    }
+  }
+}

@@ -461,6 +461,11 @@ a.button {
   margin-bottom: 1.625rem;
 }
 
+.features .container--p {
+  padding-top: 3.8rem;
+  padding-bottom: 3.8rem;
+}
+
 .features .feature__heading {
   margin-bottom: 3.5rem;
 }
@@ -472,6 +477,10 @@ a.button {
 @media screen and (min-width: 764px) {
   .features {
     text-align: left;
+  }
+  .features .feature .padding--p {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
   .features .feature__content {
     display: -ms-grid;
@@ -497,6 +506,77 @@ a.button {
   }
   .features p {
     font-size: 1rem;
+  }
+}
+
+.latest {
+  background-color: #fafafa;
+}
+
+.latest .container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.latest .latest__heading {
+  margin-bottom: 2.25rem;
+}
+
+.latest .latest__blocks {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  margin-bottom: 1.25rem;
+}
+
+.latest .latest__blocks img {
+  width: 100%;
+  margin-bottom: 1.75rem;
+}
+
+.latest .latest__blocks .latest__author {
+  font-size: 0.5625rem;
+}
+
+.latest .latest__blocks h3 {
+  font-size: 0.875rem;
+}
+
+.latest .latest__blocks h3:hover {
+  cursor: pointer;
+  color: #31d35c;
+}
+
+.latest .latest__blocks .desc {
+  font-size: 0.75rem;
+}
+
+.latest .latest__blocks .latest__text {
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 764px) {
+  .latest .container {
+    padding-top: 6rem;
+  }
+  .latest .box {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(10rem, 1fr))[4];
+        grid-template-columns: repeat(4, minmax(10rem, 1fr));
+    gap: 1.75rem;
+  }
+  .latest .latest__heading {
+    font-size: 2rem;
+    margin-bottom: 3.5rem;
+  }
+  .latest img {
+    height: 12.5rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .latest .latest__text {
+    margin-bottom: 1.625rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
